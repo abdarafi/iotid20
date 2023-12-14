@@ -24,6 +24,6 @@ label_mapping = {'normal': 0, 'anomaly': 1}
 category_mapping = {'normal': 0, 'Mirai': 1, 'DoS': 2, 'Scan': 3, 'MITM': 4}
 
 df['Label'] = df['Label'].map(label_mapping)
-df['Category'] = df['Category'].map(category_mapping)
+df['Cat'] = df['Cat'].map(category_mapping)
 
 df.to_csv('processed_dataset.csv', index=False)
